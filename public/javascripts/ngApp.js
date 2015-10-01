@@ -14,8 +14,8 @@ ngApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/',
       templateUrl: 'ngPartials/welcome.html',
     })
-    .state('auth/', {
-      url: 'auth/',
+    .state('auth', {
+      url: '/auth/',
       templateUrl: 'ngPartials/account.html',
       controller: function($stateParams) {
         console.log($stateParams.url);

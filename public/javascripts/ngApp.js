@@ -13,5 +13,13 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('welcome', {
       url: '/',
       templateUrl: 'ngPartials/welcome.html'
+    })
+    .state('auth/callback', {
+      url: 'auth/callback',
+      templateUrl: 'ngPartials/about.html',
+      setCookie: function($stateParams) {
+        console.log($stateParams);
+        // $cookie.set('token', $stateParams.(WHAT?))
+      }
     });
 });

@@ -1,0 +1,53 @@
+
+.jtron-welcome-message {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.account-div {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.window-button {
+  margin-left: 200px;
+  margin-top: -87px;
+}
+
+.alert-window {
+  height: 90px;
+  margin-right: 0px;
+  width: 100%;
+  background: #00ff00;
+}
+
+#alert-widow-canvas {
+
+}
+
+.test-alert-button {
+  margin-top: 20px;
+  margin-left: 20px;
+  /*margin-right: auto;*/
+  float: right;
+  background-color: #00ff00
+}
+
+.clr-alert-button {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+.follower-alert {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alert-button-alerts {
+  margin-top: 500px;
+}

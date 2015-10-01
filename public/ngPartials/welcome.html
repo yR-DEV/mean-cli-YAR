@@ -1,0 +1,20 @@
+<div ng-controller="WelcomeController" class="jumbotron jtron-welcome-message">
+  <div class="container">
+    <h1>YARRR-LERTS!</h1>
+    <p>
+      Alerts for Twitch.tv Streamers!
+    </p>
+    <!-- <div ng-show="!userToken"> -->
+      <a href="/login" class="btn btn-success">Create a new account and login</a>
+      <br>
+      <br>
+      <p>
+        Or
+      </p>
+      <a href="https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=47a4l7fmpqwep7eiclpur2kzjggikg6&redirect_uri=http://localhost:3000/&scope=user_read+channel_editor&state=" class="btn btn-success" ng-click="setUserToken()" role="button">Login with Twitch.tv</a>
+    <!-- </div> -->
+    <!-- <div ng-show="userToken"> -->
+      <a ui-sref="/account" class="btn btn-success">Go to your account!</a>
+    <!-- </div> -->
+  </div>
+</div>

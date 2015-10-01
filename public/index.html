@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="YRAlerts">
+  <head>
+    <meta charset="utf-8">
+    <title>yR Alerts</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <base href="/">
+
+  </head>
+  <body class="body-main">
+
+
+    <div ng-controller="NavbarController">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">yR Alerts</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+              <li><a href="/" ng-click="checkRouteParams()">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <!-- REMEMBER TO CHECK BACK TO SEE WHAT THE DIV IS CALLED FOR RIGHT SIDE
+              NAVIGATION ITEMS.... FOR A LOGIN WITH TWITCH BUTTON -->
+              <!-- Also need to look for a button made by twitch so the oauth integration feels more legit and more real... -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/login">Login</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div ui-view></div>
+
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.min.js"></script>
+
+    <!-- <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script> -->
+
+    <script src="javascripts/ngApp.js"></script>
+    <script src="javascripts/ngController.js"></script>
+    <script src="javascripts/ngService.js"></script>
+
+
+  </body>
+</html>

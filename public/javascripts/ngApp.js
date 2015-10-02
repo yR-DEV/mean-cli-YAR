@@ -3,7 +3,7 @@ var ngApp = angular.module('YRAlerts', ['ui.router', 'ngCookies']);
 ngApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
   //making 'pretty urls'
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
 
   //for urls not recognized
   $urlRouterProvider.otherwise('/');
@@ -15,15 +15,10 @@ ngApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       templateUrl: 'ngPartials/welcome.html',
     })
     .state('auth', {
-      url: '/auth/',
+      url: '/auth/callback',
       templateUrl: 'ngPartials/account.html',
       controller: function($stateParams) {
         console.log($stateParams.url);
-      },
-      resolve: {
-        authToken: ['$stateParams', function($stateParams) {
-          return $stateParams.url;
-        }]
       }
     });
 });

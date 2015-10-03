@@ -12,6 +12,15 @@
         Or
       </p>
       <a href="https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=47a4l7fmpqwep7eiclpur2kzjggikg6&redirect_uri=http://localhost:3000/auth/callback/&scope=user_read+channel_editor&state=" class="btn btn-success" ng-click="setUserToken()" role="button">Login with Twitch.tv</a>
+
+      <oauth
+      site="http://oauth-ng-server.herokuapp.com"
+      client-id="d6d2b510d18471d2e22aa202216e86c42beac80f9a6ac2da505dcb79c7b2fd99"
+      redirect-uri="http://localhost:9000"
+      profile-uri="http://oauth-ng-server.herokuapp.com/api/v1/me"
+      scope="public">
+      </oauth>
+
     <!-- </div> -->
     <!-- <div ng-show="userToken"> -->
       <a ui-sref="/account" class="btn btn-success">Go to your account!</a>
